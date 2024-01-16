@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotating Text</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Additional style for the login details box */
+    .login-details {
+      position: absolute;
+      top: 60%;
+      left: 100%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      display: none;
+    }
+
+    .login-details p {
+      margin: 0;
+      text-align: center;
+    }
+      /* Additional style for About details */
+    #about-details {
+      display: none;
+      color: white; /* Set text color for the About details */
+      position: fixed;
+      top: 140%;
+      left: 60%;
+      bottom: 200%;
+      transform: translate(-50%, -50%);
+       text-align: center;
+  white-space: nowrap;
+  font-size: 20px;
+    }
+    #about-details p {
+  display: inline;
+  margin: 10px  0;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="rotating-container" id="container1">
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+  </div>
+
+  <div class="rotating-container" id="container2">
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+    <div class="rotating-text">श्री राम</div>
+  </div>
+
+  <button class="transparent-button" onclick="toggleNavigation()">राम</button>
+  <button class="transparent-button left-button" onclick="toggleLoginDetails()">ॐ</button>
+
+  <!-- Navigation Bar -->
+  <div id="navigation-bar">
+    <button onclick="toggleNavigation()">Home</button>
+    <button id="about-button">About</button>
+    <button>Blog</button>
+    <button>Gallery</button>
+    <!-- Add more navigation buttons as needed -->
+      <!-- About Details -->
+    <div id="about-details" style="display: none;">
+  <p>Jai Shree Ram</p>
+  <p>Jai Shree Ram</p>
+  <!-- Add more lines as needed -->
+</div>
+  <!-- Add more lines as needed -->
+</div>
+
+ <!-- Login Details Box -->
+<div class="login-details" id="login-details" style="background-color: transparent !important;">
+  <h2>Ayodhya Login</h2>
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="button" onclick="submitLogin()">Login</button>
+  </form>
+</div>
+  <!-- Contact Details -->
+<div id="contact-details">
+  <div>Ayodhya Coordinates: Latitude: 26.7920° N, Longitude: 80.8937° E</div>
+
+  <!-- Add more lines as needed -->
+</div>
+
+
+
+  <footer>
+    <p>@sudheer debbati</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function toggleLoginDetails() {
+      const loginDetails = document.getElementById('login-details');
+      loginDetails.style.display = loginDetails.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+<script>
+    document.getElementById('about-button').addEventListener('click', toggleAboutDetails);
+
+    function toggleAboutDetails() {
+      const aboutDetails = document.getElementById('about-details');
+      aboutDetails.style.display = aboutDetails.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

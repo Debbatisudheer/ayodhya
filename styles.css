@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  background: url('ram1.jpg') center/cover no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.rotating-container {
+  position: relative;
+}
+
+.rotating-text {
+  position: absolute;
+  font-family: 'Arial', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #FFFFCC;
+}
+
+.rotating-text:before {
+  display: block;
+  height: 100%;
+  background: linear-gradient(45deg, orange);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rotate 10s linear infinite;
+  content: 'राम';
+  font-size: 14px; /* Adjust the font size for the first set */
+}
+
+.rotating-text2 {
+  position: absolute;
+  font-family: 'Arial', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #FFFFCC;
+}
+
+.rotating-text2:before {
+  display: block;
+  height: 100%;
+  background: linear-gradient(45deg, orange);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rotate2 10s linear infinite;
+  content: 'श्री राम';
+  font-size: 10px; /* Adjust the font size for the second set */
+}
+
+.transparent-button {
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  top: 50%;
+  left: 50%;
+  margin-top: -170px;
+  margin-left: -20px;
+  border-radius: 50%;
+  width: 74px;
+  height: 70px;
+}
+
+.transparent-button:hover {
+  background: transparent;
+  color: #ffffff;
+  box-shadow: 0 0 50px 20px white;
+}
+/* Add styles for the navigation bar */
+#navigation-bar {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 30px 10px;
+}
+
+#navigation-bar button {
+  margin: 5px;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 50px;
+  text-align: center;
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+}
+/* Adjust the position and size for the गायत्री button */
+.left-button {
+  left: 28.8%; /* You can change this value to adjust the horizontal position */
+  top: 38%;
+  font-size: 35px;
+
+}
+
+.login-details {
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0); /* Set the background to transparent */
+  opacity: 1; /* Ensure opacity is set to 1 */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 30px 6px;
+  color: white;
+}
+
+.login-details p {
+  margin: 100;
+  text-align: center;
+}
+#contact-details div {
+  display: block;
+  margin-bottom: 10px; /* Adjust as needed for spacing between lines */
+  color: white; /* Set text color for the Contact details */
+  font-size: 18px; /* Adjust the font size as needed */
+  position: fixed;
+  top: 20%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  white-space: nowrap;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
